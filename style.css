@@ -48,6 +48,7 @@ header{
     text-decoration: none;
     padding: 10px;
     outline: none;
+    caret-color: #ff80b6;
 }
 
 #input-src::placeholder{
