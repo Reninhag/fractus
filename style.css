@@ -1,0 +1,154 @@
+body, h1, h2, h3{
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    width: 100px;
+    height: 100px;
+}
+
+header{
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 15px 15px 30px #000;
+}
+
+::selection{
+    color: #11100b;
+    background:#c795ff;
+}
+
+.input-header {
+    padding: 0.5em;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 2.5em;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+.input-header:hover{
+    transition: 2s;
+    animation-duration: 1s;
+    color: black;
+}
+
+#input-src {
+    width: 250px;
+    height: 2.5em;
+    border-radius: 20px;
+    border: 0 none;
+    
+    text-decoration: none;
+    padding: 10px;
+    outline: none;
+}
+
+#input-src::placeholder{
+    color: black;
+    font-family: "Poppins";
+    font-style: oblique;
+    font-size: 13px;
+}   
+
+.box-header{
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    font-size: 1em;
+    padding: 1vw;
+    flex-wrap: wrap;
+
+    background-image: linear-gradient( to right, #ff80b6, #c795ff, #58a0ff);
+    text-overflow: ellipsis;    
+}
+
+.a-header{
+    text-decoration: none;
+    color: #000;
+    margin-left: 50px;
+}
+
+.a-header:hover {
+    transition: 1s;
+    color: #fff;
+}
+
+.div-a-header{
+    margin-right: 20px;
+}
+
+.main {
+    padding: 15vw;
+    font-size: 1.2em;
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    text-align: start;
+    background-color: #1b1911;
+    /*background-image: url("./controle.jpg");*/
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nofilter{
+    filter: none;
+}
+
+.main2 {
+    padding: 6em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: start;
+    background-color: #242218;
+    color: #fff;
+}
+
+.animate__slideInRight {
+    animation-duration: 3s;
+}
+
+#p {
+    animation-duration: 3.3s;
+}
+
+#h2-foo {
+    padding: 20px;
+    text-align: center;
+    background-color: #242218;
+    color: #fff;
+}
+
+.jogos-foo {
+    margin-bottom: 40px;
+}
+
+.img-foo:hover{
+     
+    box-shadow: 12px -12px 10px #11100b;
+}
+
+
+.jogos-foo:hover {
+   
+    transition: 0.8s;
+    scale: 1.1;
+}
+
+select, option{
+    appearance: none;
+    background: none;
+    color: #000;
+    font-family: "Poppins";
+    border-radius: 20px;
+    border: none;
+}
