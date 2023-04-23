@@ -7,10 +7,10 @@ A Fractus é uma startup com o objetivo de aproximar jogadores dos mais diversos
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
-| Rosa       | ![#ff80b6](https://via.placeholder.com/10/0a192f?text=+) #ff80b6 |
-| Roxo       | ![#c795ff](https://via.placeholder.com/10/f8f8f8?text=+) #c795ff |
-| Azul       | ![#58a0ff](https://via.placeholder.com/10/00b48a?text=+) #58a0ff |
-| Cinza escuro       | ![#1b1911](https://via.placeholder.com/10/00b48a?text=+) #1b1911 |
+| Rosa       | ![#ff80b6](https://via.placeholder.com/10/ff80b6?text=+) #ff80b6 |
+| Roxo       | ![#c795ff](https://via.placeholder.com/10/c795ff?text=+) #c795ff |
+| Azul       | ![#58a0ff](https://via.placeholder.com/10/58a0ff?text=+) #58a0ff |
+| Cinza escuro       | ![#1b1911](https://via.placeholder.com/10/1b1911?text=+) #1b1911 |
 
 
 ## Apêndice
