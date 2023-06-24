@@ -1,3 +1,10 @@
+/*
+ Cores hex
+    #1b1911
+    #383838
+    
+*/
+
 body, h1, h2, h3{
     font-family: "Poppins";
     margin: 0;
@@ -14,7 +21,7 @@ a {
 header{
     position: fixed;
     top: 0;
-    
+
     z-index: 99;
     width: 100%;
     box-shadow: 15px 15px 30px #000;
@@ -22,7 +29,7 @@ header{
 
 ::selection{
     color: #11100b;
-    background:#c795ff;
+    background: var(--color-second);
 }
 
 .input-header {
@@ -51,12 +58,14 @@ header{
     text-decoration: none;
     padding: 10px;
     outline: none;
-    caret-color: #ff80b6;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2),
+        inset 3px 3px 5px rgba(0, 0, 0, .1);
 }
 
 #input-src::placeholder{
     color: black;
     font-family: "Poppins";
+    font-style: oblique;
     font-size: 13px;
 }   
 
@@ -67,8 +76,8 @@ header{
     font-size: 1em;
     padding: 1vw;
     flex-wrap: wrap;
-
-    background-image: linear-gradient( to right, #ff80b6, #c795ff, #58a0ff);
+    
+    background: linear-gradient( to right, var(--color-first), var(--color-second), var(--color-third));
     text-overflow: ellipsis;    
 }
 
@@ -76,6 +85,7 @@ header{
     text-decoration: none;
     color: #000;
     margin-left: 50px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
 .a-header:hover {
@@ -94,7 +104,7 @@ header{
     justify-items: center;
     justify-content: center;
     text-align: start;
-    background-color: #1b1911;
+    background-color: var(--color-base);
     /*background-image: url("./controle.jpg");*/
     color: #fff;
     background-size: cover;
@@ -112,8 +122,40 @@ header{
     justify-items: center;
     justify-content: space-between;
     text-align: start;
-    background-color: #242218;
+    background-color: var(--color-base-second);
     color: #fff;
+}
+
+#h2-foo {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--color-base-second);
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    width: 230px;
+    height: 300px;
+    border-radius: 12px;
+    background-color: #303030;
+    background-color: #323232;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    overflow: hidden;
+}
+.card .img-foo::before{
+    content: "";
+    filter: blur(10px);
+}
+
+.card .img-foo img{
+    position: absolute;
+    width: 100%;
+}
+
+.card:hover {
+    scale: 1.03;
 }
 
 .animate__slideInRight {
@@ -122,29 +164,6 @@ header{
 
 #p {
     animation-duration: 3.3s;
-}
-
-#h2-foo {
-    padding: 20px;
-    text-align: center;
-    background-color: #242218;
-    color: #fff;
-}
-
-.jogos-foo {
-    margin-bottom: 40px;
-}
-
-.img-foo:hover{
-     
-    box-shadow: 12px -12px 10px #11100b;
-}
-
-
-.jogos-foo:hover {
-   
-    transition: 0.8s;
-    scale: 1.1;
 }
 
 select, option{

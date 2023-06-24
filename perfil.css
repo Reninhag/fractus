@@ -14,10 +14,6 @@
 .o-main {
     grid-area: main;
 }
-  
-.o-footer {
-    grid-area: footer;
-}
 
 .o-header, .o-aside, .o-main, .o-footer {
     background: #1b1911;
@@ -30,7 +26,7 @@ body{
     grid-template-areas: 
     "header header header"
     "main main aside"
-    "footer footer footer";
+    "main main aside";
 
     grid-template-columns: auto auto auto;
     grid-template-rows: auto 100vh auto;
@@ -41,7 +37,7 @@ body{
     
     margin: 0;
     max-zoom: 100%;
-    
+    width: 100%;
 }
 
 
@@ -51,11 +47,19 @@ body{
 }
 
 aside{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
     margin-right: 30px;
     border-radius: 30px;
     padding: 2vw;
-    max-height: 70%;
-    max-width: 80%;
+    width: 350px;
+    overflow: hidden;
+}
+
+.box-aside {
+    width: 90%;
+    position: absolute;
 }
 
 main {
@@ -66,6 +70,10 @@ main {
     max-height: 100%;
 }
 
+footer {
+    position: relative;
+    bottom: 0;
+}
 .box-header{
     display: flex;
     justify-content: space-around;
@@ -87,10 +95,11 @@ main {
 }
 
 .section {
-    display: flexbox;
     font-size: 1em;
+    height: 200px;
     border-radius: 7px;
     margin-bottom: 20px;
+    margin-right: 20px;
     padding: 0.8rem;
     background: #242218;
     color: #fff;
@@ -129,6 +138,6 @@ main {
     }
 
     100% {
-        opacity: 40%;
+        opacity: 45%;
     }
 }
