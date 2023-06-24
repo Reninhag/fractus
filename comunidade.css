@@ -8,7 +8,7 @@
 }
 
 
-body {
+.all {
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -40,6 +40,7 @@ header {
     color: #000;
 }
 
+
 input[type="text"]{
     border: 0;
     border-radius: 20px;
@@ -49,9 +50,7 @@ input[type="text"]{
         inset 3px 3px 5px rgba(0, 0, 0, .1);
 }
 
-main {
-    display: flex;
-    justify-content: center;              
+main {              
     position: relative;
     background-color: #24231c;
     width: 100%;
@@ -61,6 +60,9 @@ main {
     padding: 3%;
     box-shadow: -3px 3px 5px rgba(0, 0, 0, .3);
 }
+
+
+
 
 section {
     position: relative;
@@ -76,6 +78,7 @@ section {
     height: 50vh;
     padding: 3% 5%;
     background-color: rgba(255, 255, 255, .1);
+    font-size: 1rem;
 }
 
 .ttl-h2 h2 {
@@ -119,7 +122,7 @@ section {
     box-shadow: -5px 5px 10px rgba(0, 0, 0, .2);
 }
 
-.jogos {
+.card {
     position: relative;
     border-radius: 12px;
     width: 18%;
@@ -128,31 +131,113 @@ section {
     overflow: hidden;
 }
 
-.jogos img {
+.card img {
     position: absolute;
     width: 100%;
 }
 
-.jogos .box-img-logo {
-    position: relative;
-    top: 300px;
-    width: 100%;
-    height: 100vh;
+.card:hover img {
     transition: 0.5s;
-    background-color: rgb(40, 40, 40);
-    border: 2px solid #2c2b25;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, .4),
-        3px 3px 5px rgba(0, 0, 0, .4),
-            inset 3px 3px 5px rgba(0, 0, 0, .4),
-                inset 3px 3px 5px rgba(255, 255, 255, .1);
+    transition-delay: 0.5s;
+    filter: blur(4px);
+}
+
+ .card .box-img-logo {
+    position: relative;
+    padding: 10px;
+    border-top: 6px solid #ff80b6;
+    top: 255px;
+    width: 100%;
+    height: 100vh;  
+    transition: 1s;
+    background: rgba(50, 50, 50, 0.5);
     z-index: 1;
 }
 
+.nome-jogo{
+    transition: 0.5s;
 
-.jogos:hover .box-img-logo{
-    top: 150px;
+    margin-top: 30px;
+    position: relative;
+    top: 250px;
+    color: #dedede;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .9);
+}
+
+.card:hover .nome-jogo{
+    top: 0;
+}
+
+.hate {
+    position: relative;
+    top: 250px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
+}
+
+.card:hover .hate {
+    transition: 0.7s;
+    top: 0px;
+}
+
+.gender {
+    position: relative;
+    top: 250px;
+    text-align: center;
+    width: 10px;
+    height: 10px;
+    padding: 5px 6px;
+    border-radius: 12px;
+    font-size: 0.5rem;
+    color: #fff;
+    background-color: #2c2b25;
+}
+
+.card:hover .gender {
+    transition: 1s;
+    top: 0;
+}
+
+.card:hover .box-img-logo{
+    border-top: 4px solid #58a0ff;
+    top: 0px;
 }
 /* 
 @media (max-width: 860px) {
 
 } */
+
+
+aside {  
+    display: flex;            
+    background-color: #24231c;
+    width: 100%;
+    height: 100vh;
+    border-radius: 24px;
+    margin-top: 70px;
+    padding: 3%;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, .3);
+}
+
+aside .poster {
+    border: 1px solid #fff;
+    width: 60vw;
+    height: 50vh;
+    box-shadow: 1px 1px 15px #ff80b6,
+    -3px 3px 5px #c795ff,
+    3px -3px 5px #58a0ff,
+    inset 3px 3px 5px rgba(255, 255, 255, .18),
+    inset -3px 3px 5px rgba(255, 255, 255, .1);
+}
+
+aside .chat {
+    width: 25vw;
+    height: 80vh;
+    margin-left: 8%;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px #ff80b6,
+    -1px 1px 1px #c795ff,
+    1px -1px 1px #58a0ff;
+}
+
+
+
