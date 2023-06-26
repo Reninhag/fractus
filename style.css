@@ -36,14 +36,12 @@ header {
 }
 
 .input-header {
-    padding: 0.5em;
-    border-radius: 10px;
-    border: none;
+    padding: 7px 10px;
+    border: 0;
     width: 100px;
-    height: 2.5em;
-    margin-right: 10px;
-    cursor: pointer;
-    font-family: "Poppins";
+    margin-left: 5px;
+    border-radius: 7px;
+    color: #000;
 }
 
 .input-header:hover {
@@ -53,14 +51,11 @@ header {
 }
 
 #input-src {
-    width: 250px;
-    height: 2.5em;
-    border-radius: 20px;
-    border: 0 none;
-
-    text-decoration: none;
-    padding: 10px;
-    outline: none;
+    padding: 7px 10px;
+    border: 0;
+    width: 200px;
+    border-radius: 7px;
+    color: #000;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .2),
         inset 3px 3px 5px rgba(0, 0, 0, .1);
 }
@@ -72,12 +67,17 @@ header {
     font-size: 13px;
 }
 
+.search {
+    position: relative;
+    left: -30px;
+}
+
 .box-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     justify-items: center;
     font-size: 1em;
-    padding: 1vw;
+    padding: 1vw 5%;
     flex-wrap: wrap;
 
     background: linear-gradient(to right, var(--color-first), var(--color-second), var(--color-third));
@@ -85,15 +85,16 @@ header {
 }
 
 .a-header {
+    text-align: center;
     text-decoration: none;
-    color: #000;
+    color: #202020;
     margin-left: 50px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
 }
 
 .a-header:hover {
     transition: 1s;
-    color: #fff;
+    color: #000;
 }
 
 .div-a-header {
